@@ -1,0 +1,148 @@
+body{
+    background-image: url(assets/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.to-do-list {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+button {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.add-button {
+    background-color: rgb(67, 155, 67);
+}
+
+.add-button:hover {
+    background-color: rgb(60, 138, 60);
+}
+
+.delete-button {
+    background-color: rgb(255, 32, 32);
+}
+
+.delete-button:hover {
+    background-color: rgb(233, 18, 18);
+}
+
+.move-button {
+    background-color: rgb(29, 152, 223);
+}
+
+.move-button:hover {
+    background-color: rgb(26, 128, 187);
+}
+
+input[type="text"] {
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid lightgrey;
+    border-radius: 7px;
+    color: rgb(82 82 82);
+    outline: none;
+    margin: 10px;
+}
+
+ol {
+    padding: 0;
+}
+
+li {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #e5e5e5;
+    margin-bottom: 10px;
+    border: 3px solid lightgray;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+}
+
+.delete-button,
+.move-button {
+    padding: 10px 12px;
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+.clock-container{
+    backdrop-filter: blur(60px);
+    width: 100vw;
+    padding: 10px 0;
+}
+
+.clock{
+    color:white;
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.stopwatch {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    margin: 0 20px;
+}
+
+.stopwatch .controls {
+    margin-top: 20px;
+}
+
+.stopwatch .controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.stopwatch .controls button:hover {
+    background-color: #0056b3;
+}
